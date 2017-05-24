@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+$fonts: 'Open Sans', sans-serif
+$p_color: #ffffff  
+
+@mixin clearfix
+	&:before,
+	&:after
+		content: ""
+		display: table
+		clear: both 
+
+	
+*
+	box-sizing: border-box
+body
+	margin: 0
+	background-color: #f6f7fa
+	font-family: $fonts
+.container
+	width: 870px
+	max-width: 1800px
+	margin: 0 auto
+.row
+	margin: 40px 0 
+@include clearfix
+[class*="col-"] 
+	float: left
+	min-height: 1px
+	text-align: center
+
+.col-1
+	width: 8.33%
+.col-2
+	width: 16.66%
+.col-3
+	width: 25%
+.col-4
+	width: 33.33%
+.col-5
+	width: 41.66%
+.col-6
+	width: 50%
+.col-7
+	width: 58.33%
+.col-8
+	width: 66.66%
+.col-9
+	width: 75%
+.col-10
+	width: 83.33%
+.col-11
+	width: 91.66%
+.col-12
+	width: 100% 
+ 
+.jumbotron 
+ 	width: 100%
+ 	max-width: 1800px
+ 	height: 100vh
+ 	background: url("../graphics/background.jpg")
+ 	background-position: center
+ 	background-size: cover
+ 	position: relative
+		.container
+			height: 951px
+			position: relative
+			.header
+				padding-top: 36px
+				.logo 
+					width: 48px
+					height: 21px
+
+.iphone
+	position: absolute
+	left: 460px
+	top: 161px
+	height: 579px
+
+.jumbotron .side_text 
+	position: absolute
+	top: 255px
+	transform: translateY(15%)
+	left: -80px
+	p 
+		width: 7px;
+		color: $p_color
+		font-family: "Open Sans"
+		font-size: 10px
+		font-weight: 600
+		text-transform: uppercase
+		white-space: nowrap
+		transform: rotate(-90deg)
+		margin: 0
+		.text
+			top: 50%
+			transform: translateY(60%)
+			h1
+				width: 389px
+				color: $p_color
+				font-family: $fonts
+				font-size: 60px
+				font-weight: 300
+				white-space: nowrap
+			p
+				width: 438px
+				color: $p_color
+				font-family: $fonts
+				font-size: 13px
+				font-weight: 400
+				line-height: 24px
+
+/*Text section*/
+.text_area
+	h2 
+		color: #222626
+		font-family: $fonts
+		font-size: 35px
+		font-weight: 300
+		line-height: 24px
+		text-align: left
+		margin: 20px
+	p 
+		color: #959595
+		font-family: $fonts
+		font-size: 14px
+		font-weight: 400
+		line-height: 24px
+		text-align: left
+		margin: 20px
+	.row 
+		position: relative
+	.col-6:nth-child(2) 
+		position: absolute
+		right: 0
+		bottom: 0
+

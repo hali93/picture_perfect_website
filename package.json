@@ -1,0 +1,28 @@
+{
+  "name": "kodilla-add-project",
+  "version": "1.0.0",
+  "description": "First grunt project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hali93/picture_perfect_website.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Halina Panasiewicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hali93/picture_perfect_website/issues"
+  },
+  "homepage": "https://github.com/hali93/picture_perfect_website#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-sass": "^2.0.0"
+  }
+}
